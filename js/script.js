@@ -1,3 +1,7 @@
+console.log("SCRIPT OK");
+console.log(yesButton);
+console.log(noButton);
+
 const noButton = document.getElementById("noButton");
 const yesButton = document.getElementById("yesButton");
 const question = document.getElementById("valentineQuestion");
