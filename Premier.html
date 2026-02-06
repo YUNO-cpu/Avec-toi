@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just a February Site</title>
+
+  <link rel="stylesheet" href="css/rich.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="valentineQuestion">Will you be my Valentine?</div>
+    <img src="images/please.png" class="heroImg">
+
+    <div class="buttonGroup">
+      <button class="answerButton" id="yesButton" onclick="yayConfetti()">Yes</button>
+        <button class="answerButton" id="noButton">No</button>
+        <div id="popupNo">Are you sure? 🥺</div>
+      </div>
+    </div>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script> src="js/scrift.js"></scrift>
+
+</body>
+</html>
