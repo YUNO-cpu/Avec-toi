@@ -16,8 +16,8 @@ let index = 0;
 function changePalette() {
   const p = palettes[index];
 
-  document.body.style.background =
-    linear-gradient(135deg, ${p[0]}, ${p[2]});
+ document.body.style.background =
+  `linear-gradient(135deg, ${p[0]}, ${p[2]})`;
 
   question.style.color = p[1];
   yesButton.style.background = p[3];
@@ -35,7 +35,7 @@ changePalette();
   noButton.addEventListener(event, () => {
     const x = Math.random() * window.innerWidth / 3 - 50;
     const y = Math.random() * window.innerHeight / 5 - 30;
-    noButton.style.transform = translate(${x}px, ${y}px);
+    noButton.style.transform = `translate(${x}px, ${y}px)`;
   });
 });
 
