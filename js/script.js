@@ -1,6 +1,7 @@
 const noButton = document.getElementById("noButton");
 const yesButton = document.getElementById("yesButton");
 const question = document.getElementById("valentineQuestion");
+const popup = document.getElementById("popupNo");
 
 /* palette жагсаалт */
 const palettes = [
@@ -16,8 +17,7 @@ let index = 0;
 function changePalette() {
   const p = palettes[index];
 
- document.body.style.background =
-  `linear-gradient(135deg, ${p[0]}, ${p[2]})`;
+ document.body.style.background = p[0];
 
   question.style.color = p[1];
   yesButton.style.background = p[3];
@@ -41,14 +41,22 @@ changePalette();
 
 /* YES animation */
 noButton.addEventListener("click", () => {
-  yesButton.style.transform = "scale(1.2)";
+  popup.style.display = "block";
+  popup.style.opacity = "1";
+ 
   setTimeout(() => {
-    yesButton.style.transform = "scale(1)";
-  }, 220);
+    popup.style.display = "none";
+  }, 500);
+}, 2000);
 });
 
 /* confetti */
 function yayConfetti() {
+  yesButton,style.transform = "scale(1.2)";
+  setTimeout(() => {
+    yesButton.style.transform = "scale(1)";
+  }, 300);
+  
   confetti({
     particleCount: 150,
     spread: 70,
