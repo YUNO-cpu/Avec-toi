@@ -9,10 +9,10 @@ console.log(noButton);
 
 const palettes = [
   {
-    background: "#79a3c3",
-    text: "#3a2119",
-    buttonYes: "#d2e2ec",
-    buttonNo: "#ebcdb7"
+    background: "#617891",
+    text: "#632024",
+    buttonYes: "#25344f",
+    buttonNo: "#d5b893"
   },
   {
     background: "#b2c2d0",
@@ -46,7 +46,7 @@ function changePalette() {
   index = (index + 1) % palettes.length;
 }
 
-setInterval(changePalette, 2000);
+setInterval(changePalette, 4000);
 changePalette();
 
 /* NO button escape */
