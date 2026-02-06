@@ -43,11 +43,10 @@ const y = Math.random() * 100 - 50;
 noButton.addEventListener("click", () => {
   popup.style.display = "block";
   popup.style.opacity = "1";
- 
+
   setTimeout(() => {
     popup.style.display = "none";
   }, 500);
-}, 2000);
 });
 
 /* confetti */
