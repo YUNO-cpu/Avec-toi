@@ -3,22 +3,34 @@ const yesButton = document.getElementById("yesButton");
 const question = document.getElementById("valentineQuestion");
 const popup = document.getElementById("popupNo");
 
-/* palette */
 const palettes = [
-  ["#79a3c3", "#3a2119", "#d2e2ec", "#ebcdb7", "#957662"],
-  ["#b2c2d0", "#7a9ab7", "#4f7a9d", "#3b4c6b", "#7c2a2e"],
-  ["#13273f", "#bdd3e2", "#e9d4c3", "#4e0000", "#694634"],
-  ["#c6d1d9", "#f1f1f1", "#e7e0d8", "#f4ebe9", "#67869a"]
+  {
+    background: "#79a3c3", // body background өнгө
+    text: "#3a2119",       // асуултын текстийн өнгө
+    buttonYes: "#d2e2ec",  // YES товчны өнгө
+    buttonNo: "#ebcdb7"    // NO товчны өнгө
+  },
+  {
+    background: "#b2c2d0",
+    text: "#7a9ab7",
+    buttonYes: "#4f7a9d",
+    buttonNo: "#3b4c6b"
+  },
+  {
+    background: "#13273f",
+    text: "#bdd3e2",
+    buttonYes: "#e9d4c3",
+    buttonNo: "#4e0000"
+  },
+  {
+    background: "#c6d1d9",
+    text: "#f1f1f1",
+    buttonYes: "#e7e0d8",
+    buttonNo: "#f4ebe9"
+  }
 ];
 
 let index = 0;
-
-function changePalette() {
-  const p = palettes[index];
-  document.body.style.background = p[0];
-  question.style.color = p[1];
-  yesButton.style.background = p[3];
-  noButton.style.background = p[4];
   index = (index + 1) % palettes.length;
 }
 
