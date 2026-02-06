@@ -1,18 +1,18 @@
-console.log("SCRIPT OK");
-console.log(yesButton);
-console.log(noButton);
-
 const noButton = document.getElementById("noButton");
 const yesButton = document.getElementById("yesButton");
 const question = document.getElementById("valentineQuestion");
 const popup = document.getElementById("popupNo");
 
+console.log("SCRIPT OK");
+console.log(yesButton);
+console.log(noButton);
+
 const palettes = [
   {
-    background: "#79a3c3", // body background өнгө
-    text: "#3a2119",       // асуултын текстийн өнгө
-    buttonYes: "#d2e2ec",  // YES товчны өнгө
-    buttonNo: "#ebcdb7"    // NO товчны өнгө
+    background: "#79a3c3",
+    text: "#3a2119",
+    buttonYes: "#d2e2ec",
+    buttonNo: "#ebcdb7"
   },
   {
     background: "#b2c2d0",
@@ -35,6 +35,14 @@ const palettes = [
 ];
 
 let index = 0;
+
+function changePalette() {
+  const p = palettes[index];
+  document.body.style.background = p.background;
+  question.style.color = p.text;
+  yesButton.style.background = p.buttonYes;
+  noButton.style.background = p.buttonNo;
+
   index = (index + 1) % palettes.length;
 }
 
@@ -79,3 +87,4 @@ function yayConfetti() {
 }
 
 window.yayConfetti = yayConfetti;
+
