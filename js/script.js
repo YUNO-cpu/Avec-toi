@@ -3,7 +3,7 @@ const yesButton = document.getElementById("yesButton");
 const question = document.getElementById("valentineQuestion");
 const popup = document.getElementById("popupNo");
 
-/* palette жагсаалт */
+/* palette */
 const palettes = [
   ["#79a3c3", "#3a2119", "#d2e2ec", "#ebcdb7", "#957662"],
   ["#b2c2d0", "#7a9ab7", "#4f7a9d", "#3b4c6b", "#7c2a2e"],
@@ -13,33 +13,28 @@ const palettes = [
 
 let index = 0;
 
-/* palette солих функц */
 function changePalette() {
   const p = palettes[index];
-
- document.body.style.background = p[0];
-
+  document.body.style.background = p[0];
   question.style.color = p[1];
   yesButton.style.background = p[3];
   noButton.style.background = p[4];
-
   index = (index + 1) % palettes.length;
 }
 
-/* 2 секунд тутамд солигдоно */
 setInterval(changePalette, 2000);
 changePalette();
 
-/* NO button зугтах */
+/* NO button escape */
 ["mouseover", "touchstart"].forEach(event => {
   noButton.addEventListener(event, () => {
     const x = Math.random() * 150 - 75;
-const y = Math.random() * 100 - 50;
+    const y = Math.random() * 100 - 50;
     noButton.style.transform = `translate(${x}px, ${y}px)`;
   });
 });
 
-/* YES animation */
+/* NO click popup */
 noButton.addEventListener("click", () => {
   popup.style.display = "block";
   popup.style.opacity = "1";
@@ -49,13 +44,13 @@ noButton.addEventListener("click", () => {
   }, 500);
 });
 
-/* confetti */
+/* YES confetti */
 function yayConfetti() {
   yesButton.style.transform = "scale(1.2)";
   setTimeout(() => {
     yesButton.style.transform = "scale(1)";
   }, 300);
-  
+
   confetti({
     particleCount: 150,
     spread: 70,
@@ -67,5 +62,4 @@ function yayConfetti() {
   }, 1000);
 }
 
-/* global болгох (onclick ажиллуулах) */
 window.yayConfetti = yayConfetti;
