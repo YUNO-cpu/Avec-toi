@@ -33,8 +33,8 @@ changePalette();
 /* NO button зугтах */
 ["mouseover", "touchstart"].forEach(event => {
   noButton.addEventListener(event, () => {
-    const x = Math.random() * window.innerWidth / 3 - 50;
-    const y = Math.random() * window.innerHeight / 5 - 30;
+    const x = Math.random() * 150 - 75;
+const y = Math.random() * 100 - 50;
     noButton.style.transform = `translate(${x}px, ${y}px)`;
   });
 });
@@ -52,7 +52,7 @@ noButton.addEventListener("click", () => {
 
 /* confetti */
 function yayConfetti() {
-  yesButton,style.transform = "scale(1.2)";
+  yesButton.style.transform = "scale(1.2)";
   setTimeout(() => {
     yesButton.style.transform = "scale(1)";
   }, 300);
