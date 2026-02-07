@@ -9,28 +9,28 @@ console.log(noButton);
 
 const palettes = [
   {
-    background: "#67869a",
-    text: "#f4ebe9",
-    buttonYes: "#67869a",
-    buttonNo: "#67869a"
+    background: "#2b0b18",
+    text: "#b27981",
+    buttonYes: "#7c313d",
+    buttonNo: "#522029"
   },
   {
-    background: "#4e0000",
-    text: "#e9d4c3",
-    buttonYes: "#4c0013",
-    buttonNo: "#41101b"
+    background: "#b27981",
+    text: "#7c313d",
+    buttonYes: "#e59ca6",
+    buttonNo: "#7c313d"
   },
   {
-    background: "#fffdf4",
-    text: "#41101b",
-    buttonYes: "#41101b",
-    buttonNo: "#41101b"
+    background: "#7a9ab7",
+    text: "#7c2a2e",
+    buttonYes: "#4f7a9d",
+    buttonNo: "#b2c2d0"
   },
   {
-    background: "#bdd3e2",
-    text: "#694634",
-    buttonYes: "#bdd3e2",
-    buttonNo: "#bdd3e2"
+    background: "#b0e0f3",
+    text: "#000000",
+    buttonYes: "#3b6b82",
+    buttonNo: "#5a8ca0"
   }
 ];
 
