@@ -14,12 +14,12 @@ const palettes = [
     buttonYes: "#66001f",
     buttonNo: "#66001f"
   },
-  {
-    background: "#2b5288",
-    text: "#fffcef",
-    buttonYes: "#fffcef",
-    buttonNo: "#fffcef";
-  },
+ {
+  background: "#2b5288",
+  text: "#fffcef",
+  buttonYes: "#fffcef",
+  buttonNo: "#fffcef"
+},
   {
     background: "#7a9ab7",
     text: "#102e4a",
