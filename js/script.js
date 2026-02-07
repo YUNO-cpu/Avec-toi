@@ -9,10 +9,10 @@ console.log(noButton);
 
 const palettes = [
   {
-    background: "#617891",
-    text: "#632024",
-    buttonYes: "#25344f",
-    buttonNo: "#d5b893"
+    background: "#67869a",
+    text: "#f4ebe9",
+    buttonYes: "#67869a",
+    buttonNo: "#67869a"
   },
   {
     background: "#4e0000",
