@@ -33,16 +33,16 @@ const palettes = [
     buttonNo: "#5a8ca0"
   },
   {
-    background: "#3a000c",
-    text: "#f2e5c6",
-    buttonYes: "#f2e5c6",
-    buttonNo: "#f2e5c6"
-  },
-   {
     background: "#cfebff",
     text: "#78020e",
     buttonYes: "#78020e",
     buttonNo: "#78020e"
+  },
+   {
+     background: "#3a000c",
+    text: "#f2e5c6",
+    buttonYes: "#f2e5c6",
+    buttonNo: "#f2e5c6"
   }
 ];
 
