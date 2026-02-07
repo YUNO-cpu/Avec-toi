@@ -40,8 +40,8 @@ function changePalette() {
   const p = palettes[index];
   document.body.style.background = p.background;
   question.style.color = p.text;
-  yesButton.style.background = p.buttonYes;
-  noButton.style.background = p.buttonNo;
+ yesButton.style.color = p.buttonYes;
+noButton.style.color = p.buttonNo;
 
   index = (index + 1) % palettes.length;
 }
