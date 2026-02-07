@@ -18,7 +18,7 @@ const palettes = [
     background: "#2b5288",
     text: "#fffcef",
     buttonYes: "#fffcef",
-    buttonNo: "#fffcef;
+    buttonNo: "#fffcef";
   },
   {
     background: "#7a9ab7",
