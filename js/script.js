@@ -11,14 +11,14 @@ const palettes = [
   {
     background: "#fefcef",
     text: "#66001f",
-    buttonYes: "#eee0dc",
-    buttonNo: "#efe6de"
+    buttonYes: "#66001f",
+    buttonNo: "#66001f"
   },
   {
-    background: "#b27981",
-    text: "#7c313d",
-    buttonYes: "#e59ca6",
-    buttonNo: "#7c313d"
+    background: "#2b5288",
+    text: "#fffcef",
+    buttonYes: "#fffcef",
+    buttonNo: "#fffcef;
   },
   {
     background: "#7a9ab7",
