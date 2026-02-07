@@ -15,22 +15,22 @@ const palettes = [
     buttonNo: "#d5b893"
   },
   {
-    background: "#b2c2d0",
-    text: "#7a9ab7",
-    buttonYes: "#4f7a9d",
-    buttonNo: "#3b4c6b"
+    background: "#4e0000",
+    text: "#e9d4c3",
+    buttonYes: "#4c0013",
+    buttonNo: "#41101b"
   },
   {
-    background: "#13273f",
-    text: "#bdd3e2",
-    buttonYes: "#e9d4c3",
-    buttonNo: "#4e0000"
+    background: "#fffdf4",
+    text: "#41101b",
+    buttonYes: "#41101b",
+    buttonNo: "#41101b"
   },
   {
-    background: "#c6d1d9",
-    text: "#f1f1f1",
-    buttonYes: "#e7e0d8",
-    buttonNo: "#f4ebe9"
+    background: "#bdd3e2",
+    text: "#694634",
+    buttonYes: "#bdd3e2",
+    buttonNo: "#bdd3e2"
   }
 ];
 
@@ -46,7 +46,7 @@ function changePalette() {
   index = (index + 1) % palettes.length;
 }
 
-setInterval(changePalette, 4000);
+setInterval(changePalette, 6000);
 changePalette();
 
 /* NO button escape */
